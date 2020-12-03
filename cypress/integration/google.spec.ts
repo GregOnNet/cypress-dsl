@@ -2,8 +2,8 @@ import { GitHub } from '../support/github';
 
 describe('Visit google', () => {
   GitHub.repository.before.openOrganisation('angular');
-  GitHub.repository.verify.verifyRepositoriesExist();
-  GitHub.repository.verify.verifyRepositoryExists('components');
+  GitHub.repository.verify.repositoriesExist();
+  GitHub.repository.verify.repositoryExists('components');
   GitHub.repository.action.openRepository('components');
   GitHub.repository.action.switchToBranch('11');
 

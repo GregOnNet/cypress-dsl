@@ -6,13 +6,13 @@ export class GitHubRepositoryBefore {
   }
 }
 export class GitHubRepositoryVerifier {
-  verifyRepositoriesExist() {
+  repositoriesExist() {
     it('verify repository cards exist', () => {
       cy.get('.pinned-item-list-item-content').should('be.visible');
     });
   }
 
-  verifyRepositoryExists(name: string) {
+  repositoryExists(name: string) {
     it(`search for repository "${name}"`, () => {
       cy.get('.pinned-item-list-item-content')
         .contains(name)
