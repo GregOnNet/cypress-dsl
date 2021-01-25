@@ -1,6 +1,6 @@
 import { GitHub } from '../support/github';
 
-describe('Visit google', () => {
+describe('GitHub | Angular', () => {
   GitHub.repository.before.openOrganisation('angular');
   GitHub.repository.verify.repositoriesExist();
   GitHub.repository.verify.repositoryExists('components');
